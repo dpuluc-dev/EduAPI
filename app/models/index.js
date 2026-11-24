@@ -24,4 +24,6 @@ db.sequelize = sequelize;
 // Le pasamos la instancia de conexion 'sequelize' como argumentos
 db.usuarios = require("./usuario.models.js")(Sequelize, sequelize);
 // Exportamos el objeto 'db' para que cualquier modulos lo pueda utilizar
-module.exports = db; 
+module.exports = db;
+
+// Como dato adicional el index es el unico archivo en donde podemos realizar la relaciones de llaves foraneas
